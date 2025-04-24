@@ -1,0 +1,47 @@
+:root {
+  --items-count: 6;
+  --width: 200px;
+  --height: 200px;
+  --duration: 10s;
+}
+
+
+
+.slider {
+  width: 100%;
+  height: var(--height);
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #fff 10% 90%, transparent);
+}
+
+.slider:hover img {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider img:hover {
+  filter: grayscale(0);
+}
+
+.moving-img {
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  object-fit: cover;
+  transition: filter 0.3s;
+  left: 100%;
+  filter: grayscale(0);
+  animation: autoRunSlider var(--duration) linear infinite;
+  animation-delay: calc((var(--pos) - 1) * (var(--duration) / var(--items-count)));
+}
+
+@keyframes autoRunSlider {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: calc(var(--width) * 0);
+  }
+}

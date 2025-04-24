@@ -1,0 +1,74 @@
+/*  */
+
+.knife {
+  margin-top: 200px;
+  transition: transform 0.3s ease-in-out;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+.knife:hover {
+
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.text-product {
+
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  color: #8B4513;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  font-family: 'Varela Round', cursive;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.text-product:hover {
+  color: #000000;
+  transform: scale(1.05);
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button-product {
+  width: 300px;
+
+  font-family: 'Varela Round';
+  font-size: x-large;
+  background-color: #8B4513;
+  color: #ffffff;
+  border-color: #b87333;
+
+
+  margin-top: 110px;
+
+}
+
+.button-product:hover {
+  color: #8B4513;
+  background-color: #ffffff;
+
+
+}

@@ -1,0 +1,49 @@
+.split-background-container {
+  background-image: url('./Knives.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-parent {
+
+  font-size: 5rem;
+  font-weight: 700;
+  justify-items: center;
+  color: #fffbf8;
+  font-family: David Libre;
+
+  text-align: center;
+
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(120deg, #ffcc00, #d16ba5);
+
+  background-clip: text;
+  padding: 20px 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  max-width: 90%;
+
+}
+
+.split-parent:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4), 0px 0px 80px rgba(0, 0, 0, 0.2) !important;
+
+}
+
+.split-parent span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.split-parent span+span {
+  margin-left: 0.4em;
+
+}

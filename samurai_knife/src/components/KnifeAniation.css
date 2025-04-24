@@ -1,0 +1,61 @@
+.knife-animation-wrapper {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.natural-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, #fefefe, #e0e0e0);
+  background-size: 200% 200%;
+  z-index: 0;
+}
+
+.knife-img {
+  width: 200px;
+  height: 80%;
+  z-index: 2;
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.shine-effect {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 80px;
+  height: 80%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.knife-text {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  z-index: 2;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.image-switcher-img {
+  width: 10%;
+  max-width: 40px;
+  /* שנה לפי הגודל שאתה רוצה */
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
